@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Trick or Treat</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Trick or Treat">
+  <meta name="keywords" content="">
+  <meta name="author" content="WongDoody">
+  <meta name="google" content="notranslate">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/up_btn.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/16/Ghost-Flat-icon.png">
+</head>
+<style>
+
+/* Full-Width Images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+img {
+    max-width:100%;
+    display: block;
+}
+
+video {
+    max-width:100%;
+    display: block;
+}
+
+.sections {
+    width:100%;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: block;
+    height: 100%;
+}
+
+div{
+  display: flex;
+}
+
+/* Copy
+___________________________________________________ */
+#headline{
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: sans-serif;
+  font-size: xx-large;
+  font-weight: 800;
+  transform: scale(1, .9);
+  color: white;
+}
+
+#instructions{
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: 600;
+  transform: scale(1, .9);
+  color: white;
+}
+
+#link-out{
+  position: absolute;
+  margin-top: 65%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: sans-serif;
+  font-size: medium;
+  font-weight: 400;
+  transform: scale(1, .9);
+  color: white;
+}
+
+/* Buttons
+___________________________________________________ */
+#button{
+  position: absolute;
+  align-self: flex-end;
+  justify-content: center;
+  margin-bottom: 15%;
+}
+
+/* Override Safari Shadow DOM Image Overlay
+___________________________________________________ */
+image-overlay-line {
+  display: none !important
+}
+</style>
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('clueid');
+
+// Clues
+const mj = "Amidst tales of communication, on a shelf quite vast, Seek the rhythms and blues, the stories of jazz.<br/><br/>Among periodicals, the answer does look, For your next hint resides in a musical book.";
+const dr = "In a place where humor meets the wild, A creature stands, so oddly styled. Draped in hats and memories bright, Seek the antlered one in plain sight. Where two caps perch, your path's beguiled.";
+const fy = "In a cozy corner where one may repose, Beneath comfy cushions, the secret does doze. With neon signs pointing, the way is quite clear, Lift the soft pillow, and the answer's near.";
+const bw = "Near the panes where sunlight gleams, By the cart where spirits dream, Rests a cushion, bright and bold, Seek its fabric's colorful fold, And there you'll find what's next, it seems.";
+const dc = "Where spirits soar and bottles line, A mythical beast makes its shine. Its mane of pink, its body so grand, Seek its embrace, and in its hand, Your next clue will be close at hand.";
+const ko = "In the realm of the kitchen, where meals come alive, Next to the cold guardian, where fresh foods survive. Seek the humble oats, in a packet they stay, Your next hint lies there, to guide you on your way.";
+const kt = "In the heart of the kitchen, where flavors align, Among leaves that are steeped, and aromas that shine. The Earl Grey stands out, with its label quite clear, Within that very box, your next hint is near.";
+const pb = "Where vivid colors dance and play, And pieces fit in their own way. But secrets lie not just on top, Beneath the box, your quest won't stop. Lift it up and you'll find a way.";
+const sr = "In a room where snack was once at bay, Next to where you scan and pay. Above the wicker, high and neat, Your next clue is in a treatless seat.";
+const bf = "In the realm where ideas spark and flare, Brad's domain is found right there. Not too hot and not too cold, Open the door, and the prize will unfold.";
+
+function getClue(key){
+  if (key == "ldlmjguj4jf") {
+    clue = mj;
+  } else if (key == "ered48frngs") {
+    clue = dr;
+  } else if (key == "g3sfvj4y4ns") {
+    clue = fy;
+  } else if (key == "ji4bkd9w8dj") {
+    clue = bw;
+  } else if (key == "43ddg34clrj") {
+    clue = dc;
+  } else if (key == "fd9knbhongh") {
+    clue = ko;
+  } else if (key == "k4ikd2dt49s") {
+    clue = kt;
+  } else if (key == "9pdppo4bkd9") {
+    clue = pb;
+  } else if (key == "vj4smhlr2n4") {
+    clue = sr;
+  } else if (key == "4nsbd2pfope") {
+    clue = bf;
+  } else {
+    clue = "No clue found. Please try again or ask for help.";
+  };
+  document.write(clue);
+};
+</script>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="sections">
+    <div>
+      <img src="images/pumpkin-bkgd.png">
+      <div id="headline">
+        Clue:
+      </div>
+      <div id="instructions">
+        <script>getClue(myParam)</script>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--script src="js/up_btn.js"></script>
+  <script>
+    up({
+     width: '35px',
+     height: '35px'
+    });
+  </script-->
+  
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
